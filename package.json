@@ -2,7 +2,7 @@
   "name": "barkelou",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://papi-root.github.io/barkelou/", 
+  "homepage": "https://papi-root.github.io/barkelou", 
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
