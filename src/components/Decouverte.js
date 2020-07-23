@@ -93,7 +93,7 @@ const Decouverte = () => {
         <div class="col-md-9">
             <div class="row">
             
-                <a href="/details" class="item3 col-md-3">
+                <Link href="/details" class="item3 col-md-3">
                     <div class="item_image3">
                         <img src={img1} alt=""/>
                     </div>
@@ -101,7 +101,7 @@ const Decouverte = () => {
                         <h4> Titre du projets </h4>
                         <p>Un peu de presentation du projet </p>
                     </div>
-                </a>
+                </Link>
                 
                 <a href="#" class="item3 col-md-3">
                     <div class="item_image3">

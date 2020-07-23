@@ -13,12 +13,12 @@ const Nav = () => {
                 </div> 
                 
                 <div class="logo">
-                    <h4> <a href="/">Barkelou</a>  </h4>
+                    <h4> <Link href="/">Barkelou</Link>  </h4>
                 </div> 
                 
                 <ul class="ul1">
                 <li><Link to="/lancer"> Lancer votre projet</Link></li>
-                <li><a href="/decouverte"> Decouvrez les projets</a></li>
+                <li><Link href="/decouverte"> Decouvrez les projets</Link></li>
                 </ul> 
 
                 <ul class="ul2">
