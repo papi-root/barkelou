@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/barkelou/static/js/main.237a07da.chunk.js",
-    "main.js.map": "/barkelou/static/js/main.237a07da.chunk.js.map",
+    "main.js": "/barkelou/static/js/main.4cb3673f.chunk.js",
+    "main.js.map": "/barkelou/static/js/main.4cb3673f.chunk.js.map",
     "runtime-main.js": "/barkelou/static/js/runtime-main.cf3f7f35.js",
     "runtime-main.js.map": "/barkelou/static/js/runtime-main.cf3f7f35.js.map",
-    "static/js/2.82020f1a.chunk.js": "/barkelou/static/js/2.82020f1a.chunk.js",
-    "static/js/2.82020f1a.chunk.js.map": "/barkelou/static/js/2.82020f1a.chunk.js.map",
+    "static/js/2.b0a309ca.chunk.js": "/barkelou/static/js/2.b0a309ca.chunk.js",
+    "static/js/2.b0a309ca.chunk.js.map": "/barkelou/static/js/2.b0a309ca.chunk.js.map",
     "index.html": "/barkelou/index.html",
-    "precache-manifest.406d8c282453b45db21a78753a65fe02.js": "/barkelou/precache-manifest.406d8c282453b45db21a78753a65fe02.js",
+    "precache-manifest.e2b42211a0edb01c68eb26071972f9b4.js": "/barkelou/precache-manifest.e2b42211a0edb01c68eb26071972f9b4.js",
     "service-worker.js": "/barkelou/service-worker.js",
-    "static/js/2.82020f1a.chunk.js.LICENSE.txt": "/barkelou/static/js/2.82020f1a.chunk.js.LICENSE.txt"
+    "static/js/2.b0a309ca.chunk.js.LICENSE.txt": "/barkelou/static/js/2.b0a309ca.chunk.js.LICENSE.txt",
+    "static/media/1.jpeg": "/barkelou/static/media/1.28384358.jpeg",
+    "static/media/2.jpeg": "/barkelou/static/media/2.23e776b8.jpeg",
+    "static/media/3.jpeg": "/barkelou/static/media/3.834597ff.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.cf3f7f35.js",
-    "static/js/2.82020f1a.chunk.js",
-    "static/js/main.237a07da.chunk.js"
+    "static/js/2.b0a309ca.chunk.js",
+    "static/js/main.4cb3673f.chunk.js"
   ]
 }

@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'Consola', sans-serif;
+   
 }
 
 body {
     overflow-x: hidden;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 nav {
     display: flex;
     align-items: center;
-    min-height: 8vh; 
+    min-height: 6vh; 
     background: #fff;
     border-bottom: 1px solid #bdc3c7; 
     width: 100%;  
@@ -26,6 +27,17 @@ nav {
     padding: 20px;
 } 
 
+.logo h4 a {
+
+    text-decoration: none;
+    color: #000; 
+} 
+
+.logo h4 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -36,15 +48,16 @@ ul li {
 ul li a {
     color: #000;
     text-decoration: none; 
-    font-size: 14px; 
+    font-size: 15px; 
     transition: 0.1s;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    padding-top: 10px;
 }
 
 ul li a:hover {
     color: #19b4fa;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #19b4fa;
+    padding-bottom: 32px;
+    text-decoration: none;
 }
 
 .ul1{
@@ -56,24 +69,27 @@ ul li a:hover {
 }
 
 .connecter {
-    border: 2px solid #000; 
+    border: 1px solid #19b4fa; 
     padding: 15px;
     color: #fff; 
-    background: #000; 
+    background: #19b4fa;  
     transition: 0.2s; 
+    
 }
 
 .connecter:hover {
-    border: 2px solid #19b4fa;; 
-    background: #19b4fa;; 
-    color: #fff;
+    border: 1px solid #1391cc; 
+    background: #1391cc; 
+    color: #fff; 
+    padding-bottom: 16px;
 }
 
 .burger {
     margin: 10px;
     border: 1px solid #000;
     background: #000;
-    padding: 5px;
+    padding: 5px; 
+    display: none; 
 }
 
 .burger div {
@@ -134,25 +150,32 @@ ul li a:hover {
 } 
 
 .item {
-    margin: 10px 0px; 
+    margin: 10px 10px; 
     background: #fff;
     transition: transform 0.3s; 
     transform: translate3d(0, -1px, 0); 
     border: 1px solid #fff;
-    border-radius: 10px; 
     transform: scale(1);
-    
 }
 
-.item:hover {
-    transform: scale(1.03); 
+.item_image {
+    overflow: hidden;
+    border-radius: 13px; 
+}
+
+
+.item img {
+    transition: transform 0.5s;
+}
+
+.item:hover img {
+    transform: scale(1.05); 
 }
 
 .item img {
     display: block;
-    width: 80%;
+    width: 100%;
     border: 1px solid #fff;
-    border-radius: 9px;
 }
 
 .item_body {
@@ -178,8 +201,8 @@ ul li a:hover {
 
 .carousel {
     position: relative; 
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 2%;
     overflow: hidden;
 } 
 
@@ -209,7 +232,7 @@ ul li a:hover {
     border-radius: 50%;
     box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a; 
   
-    margin-top: 0px; 
+    margin-top: -10px; 
     right: -20px; 
     cursor: pointer;  
     transition: transform 0.3s; 
@@ -262,11 +285,25 @@ ul li a:hover {
 /* PROJETX POPULAIRE */ 
 
 .item2 {
-    margin: 10px 0px; 
+    margin: 10px 10px; 
     background: #fff;
     transform: translate3d(0, -1px, 0); 
     border: 1px solid #fff;
-    border-radius: 10px; 
+    overflow: hidden;
+}
+
+
+.item_image2 {
+    overflow: hidden;
+}
+
+
+.item2 img {
+    transition: transform 0.5s;
+}
+
+.item2:hover img {
+    transform: scale(1.05); 
 }
 
 
@@ -274,14 +311,8 @@ ul li a:hover {
     display: block;
     width: 100%;
     border: 1px solid #fff; 
-    margin: 40px;
-    transition: transform 0.3s; 
-    transform: scale(1);
 } 
 
-.item2 img:hover {
-    transform: scale(1.03); 
-}
 
 .item2 {
     position: relative; 

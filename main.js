@@ -16,5 +16,7 @@ body.addEventListener('click', () => {
         console.log(menu.classList)
     }
 })
-*/ 
+*/  
+
+console.log('kjadkjad')
 
