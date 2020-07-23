@@ -12,7 +12,7 @@ const ConnexionIndex = () => {
                     <label for="">Veuillez saisir votre email pour se connecter ou s'inscrire </label> <br/> <br/>
                     <input class="email_input" type="text" placeholder="exemple:email@email.com" /> <br/> <br/>
                     <br/>
-                    <Link to="/barkelou/inscription" class="btn-submit" type="submit" value="Continuer" >Continuer </Link>
+                    <Link to="/barkelou/inscription" class="btn-submit" type="submit" value="Continuer" >Continuer</Link>
                 </form>
             </div>
 
