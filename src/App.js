@@ -14,13 +14,13 @@ function App() {
     <Router>
       <Fragment>
           <Nav /> 
-          <Route exact path="/" component={Index} /> 
+          <Route exact path="/barkelou/" component={Index} /> 
           <Switch>
-              <Route exact path="/lancer" component={Lancer} /> 
-              <Route exact path="/decouverte" component={Decouverte} /> 
-              <Route exact path="/auth" component={ConnexionIndex} /> 
-              <Route exact path="/inscription" component={Inscription} />
-              <Route exact path="/details" component={Details} />
+              <Route exact path="/barkelou/lancer" component={Lancer} /> 
+              <Route exact path="/barkelou/decouverte" component={Decouverte} /> 
+              <Route exact path="/barkelou/auth" component={ConnexionIndex} /> 
+              <Route exact path="/barkelou/inscription" component={Inscription} />
+              <Route exact path="/barkelou/details" component={Details} />
               
           </Switch> 
           <footer>
