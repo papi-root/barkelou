@@ -1,0 +1,28 @@
+.lancer-landing {
+    background: url('1.jpeg') no-repeat;
+    background-size: cover;
+    height: 90vh;
+} 
+
+.lancer-title {
+    position: absolute;
+    border: 1px solid #fff; 
+    background: #fff; 
+    padding: 2%;
+    top: 30vh;
+    left: 15%;
+    right: 15%;
+}
+
+.btn-lancer {
+    background: #19b4fa;
+    color: #fff; 
+    padding: 25px;
+    transition: 0.3s;
+} 
+
+.btn-lancer:hover {
+    background: #1391cc; 
+    text-decoration: none;
+    color: #fff;
+}

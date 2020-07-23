@@ -1,0 +1,26 @@
+
+.email_input{
+    border: 2px solid #ecf0f1; 
+    padding: 10px;
+    transition: 0.3s;
+    width: 80%;
+}
+
+.email_input:hover, .email_input:focus {
+    border: 2px solid #19b4fa; 
+}
+
+.btn-submit{
+    border: 1px solid #19b4fa;
+    background: #19b4fa;
+    color: #fff; 
+    padding: 20px;
+    transition: 0.3s;
+    width: 80%;
+} 
+
+.btn-submit:hover {
+    background: #1391cc; 
+    text-decoration: none;
+    color: #fff;
+}

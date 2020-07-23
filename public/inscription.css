@@ -1,0 +1,17 @@
+.inscription {
+   margin-left: 20%; 
+}
+
+.inscription label {
+}
+
+.input{
+    border: 2px solid #ecf0f1; 
+    padding: 10px;
+    transition: 0.3s;
+    width: 80%;
+}
+
+.input:hover, .input:focus {
+    border: 2px solid #19b4fa; 
+}
