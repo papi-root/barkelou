@@ -7,11 +7,11 @@ const ConnexionIndex = () => {
             <div class="col-md-6">
                 <br/><br/> <br/> <br/>
                 <h2 class="text-center" style={{fontWeight: 'bold'}}>Bienvenue</h2> <br/> <br/>
-                <form  class="text-center" >
+                <form  class="text-center" action="/barkelou/inscription">
                     <label for="">Veuillez saisir votre email pour se connecter ou s'inscrire </label> <br/> <br/>
                     <input class="email_input" type="text" placeholder="exemple:email@email.com" /> <br/> <br/>
                     <br/>
-                    <Link to="/inscription" class="btn-submit" type="submit" value="Continuer" />
+                    <input class="btn-submit" type="submit" value="Continuer" />
                 </form>
             </div>
 

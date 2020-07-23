@@ -93,7 +93,7 @@ const Decouverte = () => {
         <div class="col-md-9">
             <div class="row">
             
-                <Link href="/details" class="item3 col-md-3">
+                <Link href="/barkelou/details" class="item3 col-md-3">
                     <div class="item_image3">
                         <img src={img1} alt=""/>
                     </div>
