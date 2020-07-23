@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c0fc615acfb81803019b8568fff4c0e",
+    "revision": "8d9462c5ad52bc45c8744e3f30958362",
     "url": "/barkelou/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barkelou/static/js/2.496d0cff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4dff2427e6b81059b342",
-    "url": "/barkelou/static/js/main.ec95d5ce.chunk.js"
+    "revision": "234b085509ccd7332e72",
+    "url": "/barkelou/static/js/main.fa373f6e.chunk.js"
   },
   {
     "revision": "eca3c52db83eed0fdd89",
