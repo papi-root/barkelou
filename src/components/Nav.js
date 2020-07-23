@@ -17,7 +17,7 @@ const Nav = () => {
                 </div> 
                 
                 <ul class="ul1">
-                <li><Link to="/barkelou/lancer"> Lancer votre projet</Link></li>
+                <li><a href="/barkelou/lancer"> Lancer votre projet</a></li>
                 <li><a href="/barkelou/decouverte"> Decouvrez les projets</a></li>
                 </ul> 
 
