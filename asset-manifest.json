@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.js": "/barkelou/static/js/main.66d4fbf2.chunk.js",
-    "main.js.map": "/barkelou/static/js/main.66d4fbf2.chunk.js.map",
+    "main.css": "/barkelou/static/css/main.768aee54.chunk.css",
+    "main.js": "/barkelou/static/js/main.90509e40.chunk.js",
+    "main.js.map": "/barkelou/static/js/main.90509e40.chunk.js.map",
     "runtime-main.js": "/barkelou/static/js/runtime-main.cf3f7f35.js",
     "runtime-main.js.map": "/barkelou/static/js/runtime-main.cf3f7f35.js.map",
-    "static/js/2.496d0cff.chunk.js": "/barkelou/static/js/2.496d0cff.chunk.js",
-    "static/js/2.496d0cff.chunk.js.map": "/barkelou/static/js/2.496d0cff.chunk.js.map",
+    "static/css/2.06644918.chunk.css": "/barkelou/static/css/2.06644918.chunk.css",
+    "static/js/2.c8a4055c.chunk.js": "/barkelou/static/js/2.c8a4055c.chunk.js",
+    "static/js/2.c8a4055c.chunk.js.map": "/barkelou/static/js/2.c8a4055c.chunk.js.map",
     "index.html": "/barkelou/index.html",
-    "precache-manifest.f1c7e64f46f8ba697ac79f499b61992f.js": "/barkelou/precache-manifest.f1c7e64f46f8ba697ac79f499b61992f.js",
+    "precache-manifest.ac097724e6216307c256d847a9714a21.js": "/barkelou/precache-manifest.ac097724e6216307c256d847a9714a21.js",
     "service-worker.js": "/barkelou/service-worker.js",
-    "static/js/2.496d0cff.chunk.js.LICENSE.txt": "/barkelou/static/js/2.496d0cff.chunk.js.LICENSE.txt",
-    "static/media/1.jpeg": "/barkelou/static/media/1.28384358.jpeg",
-    "static/media/2.jpeg": "/barkelou/static/media/2.23e776b8.jpeg",
-    "static/media/3.jpeg": "/barkelou/static/media/3.834597ff.jpeg"
+    "static/css/2.06644918.chunk.css.map": "/barkelou/static/css/2.06644918.chunk.css.map",
+    "static/css/main.768aee54.chunk.css.map": "/barkelou/static/css/main.768aee54.chunk.css.map",
+    "static/js/2.c8a4055c.chunk.js.LICENSE.txt": "/barkelou/static/js/2.c8a4055c.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/barkelou/static/media/1.91fed080.jpg",
+    "static/media/2.jpg": "/barkelou/static/media/2.5c3db9c4.jpg",
+    "static/media/3.jpg": "/barkelou/static/media/3.91fed080.jpg",
+    "static/media/4.jpeg": "/barkelou/static/media/4.c3b68e5d.jpeg",
+    "static/media/5.jpeg": "/barkelou/static/media/5.3cc4edff.jpeg",
+    "static/media/style.css": "/barkelou/static/media/next.fa03ef84.svg",
+    "static/media/slick-theme.css": "/barkelou/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cf3f7f35.js",
-    "static/js/2.496d0cff.chunk.js",
-    "static/js/main.66d4fbf2.chunk.js"
+    "static/css/2.06644918.chunk.css",
+    "static/js/2.c8a4055c.chunk.js",
+    "static/css/main.768aee54.chunk.css",
+    "static/js/main.90509e40.chunk.js"
   ]
 }

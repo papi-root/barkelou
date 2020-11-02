@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-   
 }
 
 body {
@@ -11,6 +10,7 @@ body {
 }
 
 nav {
+    position: fixed; 
     display: flex;
     align-items: center;
     min-height: 6vh; 
@@ -68,21 +68,36 @@ ul li a:hover {
    width: 60%;
 }
 
-.connecter {
+
+.connecter-icone{
+    display: none; 
+}
+
+.connecter, .connecter-icone {
     border: 1px solid #19b4fa; 
     padding: 15px;
     color: #fff; 
     background: #19b4fa;  
     transition: 0.2s; 
-    
+} 
+
+.connecter-icone {
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
 }
 
-.connecter:hover {
+.connecter:hover, .connecter-icone:hover{
     border: 1px solid #1391cc; 
     background: #1391cc; 
     color: #fff; 
     padding-bottom: 16px;
-}
+} 
+
+.connecter-icone:hover {
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+} 
+
 
 .burger {
     margin: 10px;
@@ -136,7 +151,48 @@ ul li a:hover {
 .burger-menu li a {
     margin-left: 15%;
     font-size: 16px;
+} 
+
+.header{
+    background: url('1.jpeg') cover no-repeat ;
+    background-attachment: fixed;
+    height: 140vh;
 }
+
+
+@media screen and (max-width: 1140px) {
+    .connecter{
+        display: none; 
+    }
+
+    .connecter-icone {
+        display: block; 
+    }
+
+    .ul2{
+        right: 2px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ul1 {
+        display: none; 
+    }
+    .burger{
+        display: block; 
+    }
+    .recherche {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    span {
+        display: none;
+    }
+}
+
+
 
 /* Style carousel */
 
