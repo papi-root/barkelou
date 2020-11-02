@@ -7,7 +7,8 @@ import Decouverte from './components/Decouverte';
 import ConnexionIndex from './components/connexion/Index'; 
 import Inscription from './components/connexion/Inscription' 
 import Details from './components/Details'; 
-
+import './style.css'
+import './explorer.css'; 
 function App() {
   return ( 
     
@@ -21,12 +22,11 @@ function App() {
               <Route exact path="/barkelou/auth" component={ConnexionIndex} /> 
               <Route exact path="/barkelou/inscription" component={Inscription} />
               <Route exact path="/barkelou/details" component={Details} />
-              
+ 
           </Switch> 
           <footer>
-        <h2>Barkelou</h2>
-        
-    </footer>
+              <h2>Barkelou</h2>
+          </footer>
       </Fragment>
     </Router>
     

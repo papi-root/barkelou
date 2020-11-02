@@ -95,15 +95,15 @@ class Carousel {
 }
 
     // Main 
-document.addEventListener('DOMContentLoaded', function() {
+
+    document.addEventListener('readystatechange', function() {
 
     new Carousel (document.querySelector('#carousel1'), {
         slidesVisible: 3,
         slidesToScroll: 2
     }) 
 }) 
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('readystatechange', function() {
 
     new Carousel (document.querySelector('#carousel2'), {
         slidesVisible: 3,

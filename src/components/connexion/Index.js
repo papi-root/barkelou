@@ -1,24 +1,25 @@
 import React from 'react'; 
-import img3 from '../../img/3.jpeg' 
+import img3 from '../../img/3.jpg' 
 import {Link }from 'react-router-dom'; 
 
 const ConnexionIndex = () => {
     return (
-        <div class="row">
-            <div class="col-md-6">
+        <div class="connexion">
+            <div class="connexion-form">
                 <br/><br/> <br/> <br/>
-                <h2 class="text-center" style={{fontWeight: 'bold'}}>Bienvenue</h2> <br/> <br/>
+                <h1 class="text-center" style={{fontWeight: 'bold'}}>Bienvenue</h1> <br/> <br/>
                 <form  class="text-center">
                     <label for="">Veuillez saisir votre email pour se connecter ou s'inscrire </label> <br/> <br/>
                     <input class="email_input" type="text" placeholder="exemple:email@email.com" /> <br/> <br/>
                     <br/>
-                    <Link to="/barkelou/inscription" class="btn-submit" type="submit" value="Continuer" >Continuer</Link>
+                    <Link to="/barkelou/inscription" class="btn-submit"  value="Continuer" >Continuer</Link>
                 </form>
             </div>
 
-        <div class="col-md-5">
+        <div class="connexion-img">
             <img src={img3} alt=""/>
         </div>
+
     </div>
     )
 }

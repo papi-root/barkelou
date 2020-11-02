@@ -1,63 +1,329 @@
 import React from 'react';
-import img2 from '../img/2.jpeg'; 
+import { makeStyles, getMuiTheme } from '@material-ui/core/styles';
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepLabel from '@material-ui/core/StepLabel';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography'; 
+import TextField from '@material-ui/core/TextField'
+import './Lancer.css'; 
 
-const Lancer = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+  },
+  backButton: {
+    marginRight: theme.spacing(1),
+  },
+  instructions: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  }, 
+}));
 
-    return (
-        <div>
-        <div class="lancer-landing">
-            <div class="lancer-title">
-                <h2 class="text-center" style={{fontWeight: 'bold'}}>Ce projet vous y croyez ? Nous aussi !</h2>
-                <p class="container-fluid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magnam sequi, fugiat rem error doloremque culpa dolor </p>
-                <a href="" className="btn btn-lancer" style={{marginLeft: '35%'}}>
-                    Je lance mon projet
-                </a> 
-                <br/> <br/>
-            </div>
-        </div>
-
-    <div class="container"> 
-        <div class="row" style={{margin: '10% 5% 10% 5%'}}>
-            <div class="col-md-5">
-                <h2 style={{fontWeight: 'bold'}}> Des coachs pour votre campagne </h2>
-                <ul  style={{marginBottom: '10%'}}>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga ad quas aliquam suscipit voluptatem error corrupti praesent</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus molestias sapiente natus repudiandae veritatis debitis dolorem autem laboriosam, esse expedita minima</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam, asperiores dignissimos dolore similique cum tenetur, aperiam eo</li>
-                </ul> 
-
-                <a href="" class="btn-lancer">
-                    Je lance mon projet
-                </a>
-            </div> 
-
-            <div class="col-md-7">
-                <img src={img2} alt="" class="col-md-12" style={{marginTop: '80px'}}/>
-            </div>
-        </div>
-
-
-        <div class="row" style={{margin: '10% 5% 10% 5%'}}>
-
-            <div class="col-md-5">
-                <h2 style={{fontSize: '40px', fontWeight: 'bold'}}> Quelles etapes pour lancer ma campagne ?</h2>
-                <br/> <br/>
-                <a class="btn-lancer" href="">Je lance mon projet</a>
-            </div> 
-
-            <div class="col-md-7">
-                <ul class="timeline">
-                    <li>Je fixe le montant que je souhaite collecter et la durée que j'estime nécessaire pour l'atteindre (60 jours maximum).</li>
-                    <li>Je complète la page de présentation de mon projet.</li>
-                    <li>Je reçois des conseils sur-mesure pour booster ma collecte et mes chances de réussite.</li>
-                    <li>Quand je suis prêt·e, je lance ma collecte et mobilise mes communautés autour du projet.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-         
-        </div>
-    )
+function getSteps() {
+  return ['Projet', 'A quoi va servir la collecte', 'ContrePartie'];
 }
 
-export default Lancer; 
+function getStepContent(stepIndex) {
+  switch (stepIndex) {
+    case 0:
+      return (
+          <div>
+              <form>
+              
+                <TextField  
+                  id="outlined-basic" 
+                  label="Titre" 
+                  variant="outlined"
+                  style={{ width: '60%'}}
+                /> 
+
+                <br /> <br />
+                 
+                <TextField  
+                  id="outlined-basic" 
+                  label="Description" 
+                  variant="outlined" 
+                  rows={4}
+                  multiline
+                  style={{ width: '60%'}}
+                />  
+                <br />  <br />
+                <TextField  
+                  id="outlined-basic" 
+                  label="Resume" 
+                  variant="outlined"
+                  style={{ width: '60%'}}
+                />  
+                <br />  <br />
+                <TextField  
+                  id="outlined-basic" 
+                  label="Somme Requis" 
+                  variant="outlined"
+                  style={{ width: '60%'}}
+                />  
+                <br />  <br />
+                <TextField  
+                  type="date"
+                  id="outlined-basic" 
+                  label="Date" 
+                  variant="outlined"
+                  style={{ width: '60%'}}
+                />  
+                <br />
+              </form>
+          </div>
+      );
+    case 1:
+      return (
+        <div>
+            <form>
+            
+              <TextField  
+                id="outlined-basic" 
+                label="Somme" 
+                variant="outlined"
+                style={{ width: '60.6%'}}
+              />
+              <br /> <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              />  &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br /> <br /> 
+              <TextField  
+                id="outlined-basic" 
+                label="Somme" 
+                variant="outlined"
+                style={{ width: '60.6%'}}
+              />
+              <br /> <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              />  &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br /> <br /> 
+              <TextField  
+                id="outlined-basic" 
+                label="Somme" 
+                variant="outlined"
+                style={{ width: '60.6%'}}
+              />
+              <br /> <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              />  &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />
+
+              <br /> <br /> 
+              <TextField  
+                id="outlined-basic" 
+                label="Somme" 
+                variant="outlined"
+                style={{ width: '60.6%'}}
+              />
+              <br /> <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 1" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              />  &nbsp;
+              <TextField  
+                id="outlined-basic" 
+                label="Objectif 2" 
+                variant="outlined"
+                style={{ width: '30%'}}
+              /> 
+              <br />
+              
+            </form>
+        </div>
+    );
+    case 2:
+      return (
+        <div>
+            <form>
+            
+              <TextField  
+                id="outlined-basic" 
+                label="Titre" 
+                variant="outlined"
+                style={{ width: '60%'}}
+              /> 
+
+              <br /> <br />
+               
+              <TextField  
+                id="outlined-basic" 
+                label="Description" 
+                variant="outlined" 
+                rows={4}
+                multiline
+                style={{ width: '60%'}}
+              />  
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Resume" 
+                variant="outlined"
+                style={{ width: '60%'}}
+              />  
+              <br />  <br />
+              <TextField  
+                id="outlined-basic" 
+                label="Somme Requis" 
+                variant="outlined"
+                style={{ width: '60%'}}
+              />  
+              <br />  <br />
+              <TextField  
+                type="date"
+                id="outlined-basic" 
+                label="Date" 
+                variant="outlined"
+                style={{ width: '60%'}}
+              />  
+              <br />
+            </form>
+        </div>
+    );
+    default:
+      return 'Unknown stepIndex';
+  }
+}
+
+export default function Lancer() {
+  const classes = useStyles();
+  const [activeStep, setActiveStep] = React.useState(0);
+  const steps = getSteps();
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleReset = () => {
+    setActiveStep(0);
+  };
+
+  return (
+    <div className={classes.root}>
+        <div style={{ height: '10vh' }}>
+
+        </div>
+      <Stepper activeStep={activeStep} alternativeLabel id="stepper">
+        {steps.map((label) => (
+          <Step key={label}>
+            <StepLabel>{label}</StepLabel>
+          </Step>
+        ))}
+      </Stepper>
+      <div>
+        {activeStep === steps.length ? (
+          <div>
+            <Typography className={classes.instructions}>All steps completed</Typography>
+            <Button onClick={handleReset}>Reset</Button>
+          </div>
+        ) : (
+          <div style={{ marginLeft: '20%'}}>
+            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+            <div>
+              <Button
+                disabled={activeStep === 0}
+                onClick={handleBack}
+                className={classes.backButton}
+              >
+                Back
+              </Button>
+              <Button variant="contained" style={{ backgroundColor: '#19b4fa', color: '#fff' }}  onClick={handleNext}>
+                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

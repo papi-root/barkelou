@@ -1,221 +1,228 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import { Link } from 'react-router-dom'
-import img1 from '../img/1.jpeg'; 
+import img1 from '../img/1.jpg'; 
+import img2 from '../img/2.jpg'; 
+import img3 from '../img/3.jpg'; 
+import img4 from '../img/4.jpeg'; 
+import img5 from '../img/5.jpeg'; 
+import "slick-carousel/slick/slick.css"  
+import "slick-carousel/slick/slick-theme.css" 
+import Slider from 'react-slick'; 
+import Card from './Card'; 
 
-const Decouverte = () => {
+export default class Decouverte extends Component {  
 
-    return (
-        <div>
-              <div class="container cont1">
+    constructor(props) {
+        super(props)
+        this.next = this.next.bind(this)
+        this.previous = this.previous.bind(this)
+    } 
 
-<div id="carousel1">
+    next() {
+        this.slider.slickNext();
+    }
 
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
-    
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
+    previous() {
+        this.slider.slickPrev();
+    }
 
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
+    render() {
+        const settings = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4,
+            SlidesToScroll: 2,
+            initialSlide: 0, 
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings:{
+                        slidesToShow:3, 
+                        SlidesToScroll: 3,
+                        infinite: true, 
+                    } 
+                },
+        
+                {
+                    breakpoint: 600,
+                    settings:{
+                        slidesToShow:2, 
+                        SlidesToScroll: 2,
+                        initialSlide: 2
+                    } 
+                }, 
 
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
+                {
+                    breakpoint: 480,
+                    settings:{
+                        slidesToShow:1, 
+                        SlidesToScroll: 1
+                    
+                    } 
+                }
+            ]
+        }
+    return (   
+        <div> 
 
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div> 
+            <div className="slider">
+                <Slider ref={ c => (this.slider = c )} {...settings}>
+                
+                    <div>
+                        <h2> <div className="carousel-img"><img src={img1} alt="" /> </div> </h2>
+                        ssad
+                    </div>
 
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item_image">
-            <img src={img1} alt=""/>
-        </div>
-        <div class="item_body">
-            <p>Type de projet</p>
-        </div>
-    </div>
+                    
+                    <div>
+                        <h2> <div className="carousel-img"><img src={img2} alt="" /> </div> </h2>dfdf
+                    </div>
 
-</div>
+                    <div>
+                        <h2> <div className="carousel-img"><img src={img3} alt="" /> </div> </h2>
+                    </div>  
 
-</div> 
+                    <div>
+                        <h2> <div className="carousel-img"><img src={img4} alt="" /> </div> </h2>
+                    </div>
 
-
-
-<h5>x projet(s) </h5>
-
-    <div class="row">
-
-        <div class="col-md-9">
-            <div class="row">
+                    <div>
+                        <h2> <div className="carousel-img"><img src={img5} alt="" /> </div> </h2>
+                    </div>        
             
-                <Link href="/barkelou/details" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </Link>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
+                </Slider >
 
+                <div className="carousel-control">
+                    <button className="prev" onClick={ this.previous }>  </button>
+                    <button className="next" onClick={ this.next }> </button>
+                </div>
+          
             </div> 
 
-            <div class="row">
-            
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
+    <h5>x projet(s) </h5>
+        <div className="projets">
+            <ul>
+                <li>
+                    <Link to="/barkelou/details" className="card">
+                        <Card 
+                            photo={img5}
+                            titre="Titre du projet"
+                            finance="67"
+                            resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                        />
+                    </Link> 
+                </li>
 
+                <li>
+                    <Card 
+                        photo={img3}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />
+                </li>
 
-            </div>
+                <li>
+                    <Card 
+                        photo={img4}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />
+                </li>
 
-            <div class="row">
-            
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
-                
-                <a href="#" class="item3 col-md-3">
-                    <div class="item_image3">
-                        <img src={img1} alt=""/>
-                    </div>
-                    <div class="item_body3">
-                        <h4> Titre du projets </h4>
-                        <p>Un peu de presentation du projet </p>
-                    </div>
-                </a>
+                <li>
+                    <Card 
+                        photo={img5}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li>
 
-            </div>  
-        </div> 
+                <li>
+                    <Card 
+                        photo={img2}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li>
 
-        <div class="col-md-3">
-            <p style={{fontWeight: 'bold'}}> Rechercher </p> 
-            <form action="">
-                <input type="text" class="search_projet" placeholder="Rechercher projet"/>
-            </form>
-            <br/>
-            <p style={{fontWeight: 'bold'}}> Projets</p> 
-            <input type="radio" value="populaires"/> <label for="">Plus populaire</label>
-            <br/>
-            <input type="radio" value="prises"/> <label for="">Notre prise</label>
-            <br/>
-            <input type="radio" value="projets"/> <label for="">Tous les projets</label>
-            <br/>
-            
-        </div> 
-            
-    </div> 
+                <li>
+                    <Card 
+                        photo={img5}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />  
+                </li>
 
+                <li>
+                    <Card 
+                        photo={img4}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li> 
 
+                <li>
+                    <Card 
+                        photo={img3}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />
+                </li>
 
-</div>
+                <li>
+                    <Card 
+                        photo={img2}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />
+                </li>
+
+                <li>
+                    <Card 
+                        photo={img1}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li>
+
+                <li>
+                    <Card 
+                        photo={img5}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li>
+
+                <li>
+                    <Card 
+                        photo={img4}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    />  
+                </li>
+
+                <li>
+                    <Card 
+                        photo={img1}
+                        titre="Titre du projet"
+                        finance="67"
+                        resume="Lorem ipsum dolor sit amet fugiat rem error doloremque culpa dolor"
+                    /> 
+                </li>
+            </ul>
+        </div>
+</div> 
     )
+} 
 }
-export default Decouverte; 

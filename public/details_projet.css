@@ -4,6 +4,8 @@
     color: #fff; 
     padding: 25px 15% 25px 15%;
     transition: 0.3s;
+    text-decoration: none; 
+    justify-content: center;
 } 
 
 .btn-soutiens:hover {
@@ -12,7 +14,137 @@
     color: #fff;
 }  
 
+.text-center {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px; 
+}
+
+.descript {
+    text-align: center; 
+}
+
+.projet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projet .projet-img {
+    flex: 30%; 
+    margin-left: 2em; 
+} 
+
+.projet .projet-img img {
+    width: 100%; 
+}
+
+.projet .projet-stat  {
+    flex: 40%; 
+    margin-left: 5%; 
+} 
+
+.stats {
+    width: 100%;
+} 
+
+.table-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
 
+@media screen and (max-width: 1024px) {
+    .projet {
+        flex-direction: column;
+    }
+
+    .projet .projet-img {
+        margin-right: 2.5em; 
+    } 
+
+    .projet .projet-img img {
+        width: 95%; 
+    }
+    
+    .projet .projet-stat  {
+        margin-left: 2em;  
+        width: 100%;
+    } 
+
+    .stats {
+        flex-direction: column; 
+    } 
+
+    .stats .f, .stats .s  {
+        display: flex; 
+        margin-bottom: 20px;
+    } 
+    
+    .stats .f span, .stats .s span {
+        flex: 0em; 
+    }
+
+        
+    .btn-soutiens {
+        padding: 15px 10% 15px 10%;  
+    } 
+}
 
 
+.projet-descrip {
+    display: flex; 
+   /* margin: 0em 2em 0em 2em; */
+}
+
+
+#content_1 {
+    display: flex; 
+    flex-direction: row;
+} 
+
+#content_1 .projet-text {
+    flex: 60%; 
+    margin-left: 2em; 
+    margin-right: 2em; 
+}
+
+#content_1 .projet-cp {
+    flex: 30%; 
+    justify-content: center;
+    margin-left: 2em; 
+    margin-right: 2em; 
+}
+
+.utilite li {
+    display: block;
+}
+
+.utilite {
+    text-align: center;
+}
+
+.ul-cp {
+    text-align: center;
+}
+
+.ul-cp li {
+    display: block;
+}
+
+.card {
+    border: 2px solid #ECF2F3; 
+}
+
+.text-center {
+    text-align: center; 
+}
+
+@media screen and (max-width: 1024px) {
+    
+#content_1 {
+    flex-direction: column;
+} 
+}

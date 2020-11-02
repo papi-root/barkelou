@@ -1,0 +1,11 @@
+#stepper .MuiStepIcon-root {
+    color: #bdc3c7;
+}
+
+#stepper .MuiStepIcon-active, #stepper .MuiStepIcon-completed {
+   color: #19b4fa;
+} 
+
+#input .MuiInput-formControl {
+    color: #19b4fa;
+}
